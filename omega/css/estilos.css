@@ -1,0 +1,207 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Orbitron&display=swap');
+
+
+*, *::after, *::before {box-sizing: border-box;}
+
+html {
+    font-size: 18px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(../imagens/imagens-omega/textura-fundo.png);
+    background-attachment: fixed;
+    font-family: 'Open Sans', sans-serif;
+}
+
+img { max-width: 100%;}
+
+
+body, h1, h2, h3, p, figure {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header, footer {
+    background-color: rgba(128, 128, 128, 0.596);
+    text-align: center;
+}
+
+header {
+    border-bottom: solid 2px;
+    margin-bottom: 7px;
+}
+
+footer {
+    border-top: solid 2px;
+}
+
+main {
+    width: 95%;
+    margin: auto;
+}
+
+article {
+    background-color: white;
+    box-shadow: black 1px 1px 5px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+h1, nav, h2, h3, button {
+    font-family: Orbitron, verdana, sans-serif;
+}
+
+h2, h3, p { padding: 1% 0;}
+
+footer img { width: 50px;}
+
+footer h2 { font-size: 1.2rem; }
+
+footer p { font-size: 0.75rem; }
+
+section, figure { 
+    margin: 30px 0;
+}
+
+figcaption {
+    text-align: center;
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+iframe { width: 100%;}
+
+/* h1 { background-color: red;}
+
+h1 a { background-color: seagreen; }
+
+nav { background-color: yellow; }
+
+nav a { background-color: blueviolet; } */
+
+h1, h1 a, nav, nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 { 
+    padding: 5px 0;
+    font-size: 2.2rem; 
+}
+
+h1 img {width: 50px;}
+
+nav a {
+    height: 50px;
+    font-size: 1.1rem;
+    width: 100%;
+}
+
+nav a:hover, nav a:focus {
+    background-color: black;
+    color: white;
+    transition: 1s;
+}
+
+article img {
+    filter: grayscale(50%);
+    transition: 1s;
+}
+
+article img:hover {
+    filter: grayscale(0);                        
+}
+
+input, textarea {
+    border: solid 2px;
+    width: 100%;
+    padding: 5px;
+}
+
+button {
+    border: none;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+
+button:hover, button:focus {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#voltar-topo {
+    position: fixed;
+    bottom: 5px;
+    right: 6px;
+}
+
+#voltar-topo a {
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+#voltar-topo a:hover, #voltar-topo a:focus {
+    background-color: white;
+    color: black;
+    transition: 1s;
+}
+
+@media screen and (min-width: 700px){
+    .container {
+        display: flex;
+        justify-content: space-between;
+        width: 95%;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 750px){
+    .grupo {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap:wrap;
+    }
+
+    .grupo section, .grupo figure {
+        width: 49%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+}
+
+
+@media screen and (min-width: 820px){
+    html { font-size: 20px; }
+}
+    
+    
+@media screen and (min-width: 1000px) {
+    .container, main {max-width: 1000px;}
+
+    header {
+        position: fixed;
+        z-index: 10;
+        width: 100%;
+        top: 0;
+    }
+
+    #voltar-topo {display: none;}
+
+    #topo, #o-que-fazemos, #nossas-equipes, #contato {
+        padding-top: 75px; 
+    }
+}
